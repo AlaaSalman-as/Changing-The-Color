@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Simple Changing Colors</title>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            background-color:wheat;
+            height:100vh;
+            font-family:"fantasy";
+        }
+        header{
+            position: relative;
+            top : 8%;
+        }
+    </style>
+</head>
+<body>
+<!------------------------------------------------------------------------->
+<header class="container text-center">
+    <div>
+        <h1 class="text-uppercase text-dark py-2">Wellcome </h1>
+    </div>
+    <div>
+        <div>
+            <h3 class="lead text-danger py-2">You Can Enter The Name Of The Color Or Just Choose It .</h3>
+        </div>
+        <input type="text" class="btn btn-dark btn-lg py-2 mr-2" id="clr1">
+        <!--<input type="color" class="" id="clr2"> -->
+    </div>
+    <div id="text">
+        <h4  class="lead text-dark mt-5">Lorem ipsum dolor sit amet.</h4>
+        <p class="lead text-dark p-2  py-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis quo, consequuntur rem magnam fugit accusamus quaerat ea sapiente a itaque nemo facilis, accusantium libero iusto deserunt fuga voluptas. Dignissimos in maxime esse! Modi officiis pariatur ullam praesentium soluta vel mollitia totam quibusdam blanditiis alias dolorem aspernatur odio repellendus odit, nulla nesciunt doloremque. Esse ipsam est culpa quis distinctio obcaecati sit inventore ullam quaerat sunt eligendi fuga, nobis consequuntur harum dignissimos! Rem ex vitae saepe, similique accusamus earum culpa error aliquid expedita veritatis adipisci maiores quaerat eveniet quos tempore recusandae voluptate fugit enim possimus rerum. Cum repellat sed perferendis quo adipisci.</p>
+    </div>
+    <div>
+        <button class="btn btn-dark btn-lg" onclick="changBackGroundColor()">Change Color </button>
+    </div>
+</header>
+<script>
+    ////////////////////////////////////////////////////
+
+    function changBackGroundColor(){
+        var tColor = document.getElementById("clr1");
+        var bcolor  = document.getElementById("text");
+
+        bcolor.style.backgroundColor = tColor.value;
+
+    }
+
+</script>
+<!------------------------------------------------------------------------->
+</body>
+</html>
